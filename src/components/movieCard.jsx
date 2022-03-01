@@ -7,7 +7,7 @@ const MovieCard = ({ posterPath, title, w, h }) => {
 	return (
 		<Image
 			alt={title}
-			src={posterBaseUrl + posterPath}
+			src={posterBaseUrl + w + posterPath}
 			placeholder="blur"
 			blurDataURL={`data:image/svg+xml;base64,${getFallbackImage(w, h)}`}
 			quality={100}

@@ -9,8 +9,8 @@ const MoviePage = ({ poster_path, title,  overview, vote_average }) => {
 				<MovieCard
 					title={title}
 					posterPath={poster_path}
-					w={350}
-					h={500}
+					w={400}
+					h={600}
 				/>
 				<ContentWrapper>
 					<div>

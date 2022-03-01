@@ -98,6 +98,7 @@ const ContentWrapper = styled.div`
 	margin: 24px auto;
 	padding: 0 48px;
 	overflow-y: auto;
+
 	/* width */
 	::-webkit-scrollbar {
 		width: 8px;
@@ -119,6 +120,12 @@ const ContentWrapper = styled.div`
 	/* Handle on hover */
 	::-webkit-scrollbar-thumb:hover {
 		background: #555;
+	}
+
+	@media screen and (max-width: 750px) {
+		display: flex;
+		justify-content: center;
+		padding: 0 8px;
 	}
 `;
 

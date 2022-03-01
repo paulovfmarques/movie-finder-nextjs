@@ -45,6 +45,11 @@ const Container = styled.div`
 	justify-content: center;
 	padding: 0 5vw;
 	margin-top: 48px;
+
+	@media screen and (max-width: 750px) {
+		flex-direction: column-reverse;
+		max-width: 450px;
+	}
 `;
 
 const Backdrop = styled.div`
@@ -74,14 +79,25 @@ const ContentWrapper = styled.div`
 		margin-bottom: 8px;
 
 		p {
-			height: 2.8rem;
-			width: 2.8rem;
+			min-height: 2.8rem;
+			min-width: 2.8rem;
+			max-width: 2.8rem;
+			max-height: 2.8rem;
 			border-radius: 1.4rem;
 			border: 2px solid white;
 			font-size: 1.25rem;
 			display: flex;
 			align-items: center;
 			justify-content: center;
+		}
+
+		@media screen and (max-width: 750px) {
+			flex-direction: column-reverse;
+
+			p {
+				margin-bottom: 24px;
+				align-self: flex-end;
+			}
 		}
 	}
 

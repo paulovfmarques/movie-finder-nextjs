@@ -49,6 +49,7 @@ const Container = styled.div`
 	@media screen and (max-width: 750px) {
 		flex-direction: column-reverse;
 		max-width: 450px;
+		height: fit-content;
 	}
 `;
 

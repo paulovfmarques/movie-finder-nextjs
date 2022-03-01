@@ -101,20 +101,20 @@ const ContentWrapper = styled.div`
 
 	/* width */
 	::-webkit-scrollbar {
-		width: 8px;
-		border-radius: 4px;
+		width: 6px;
+		border-radius: 3px;
 	}
 
 	/* Track */
 	::-webkit-scrollbar-track {
 		background: #b1afaf;
-		border-radius: 4px;
+		border-radius: 3px;
 	}
 
 	/* Handle */
 	::-webkit-scrollbar-thumb {
 		background: #ecc903;
-		border-radius: 4px;
+		border-radius: 3px;
 	}
 
 	/* Handle on hover */
